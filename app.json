@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "proyecto-camara",
+    "slug": "camara",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/splash.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "##ff0000",
+          "image": "./assets/splash.png",
+          "dark": {
+            "image": "./assets/splash.png",
+            "backgroundColor": "##ff0000"
+          },
+          "imageWidth": 1000,
+          "resizeMode": "cover"
+        }
+      ]
+    ],
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "##ff0000"
+    },
+    "ios": {
+      "supportsTablet": true,
+        "infoPlist": {
+        "NSCameraUsageDescription": "La app necesita acceso a la cámara para tomar fotos",
+        "NSPhotoLibraryAddUsageDescription": "La app necesita acceso a la galería para guardar fotos"
+      }
+    },
+    "android": {
+      "splash": {
+        "image": "./assets/splash.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ff0000",
+        "dark": {
+              "image": "./assets/splash.png",
+              "resizeMode": "cover",
+              "backgroundColor": "#ff0000"
+        }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "##ff0000"
+      },
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.miprimerareactnativeapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
